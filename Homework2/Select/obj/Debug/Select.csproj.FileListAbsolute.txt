@@ -1,0 +1,5 @@
+D:\编程项目\Homework2\Select\bin\Debug\Select.exe.config
+D:\编程项目\Homework2\Select\bin\Debug\Select.exe
+D:\编程项目\Homework2\Select\bin\Debug\Select.pdb
+D:\编程项目\Homework2\Select\obj\Debug\Select.exe
+D:\编程项目\Homework2\Select\obj\Debug\Select.pdb

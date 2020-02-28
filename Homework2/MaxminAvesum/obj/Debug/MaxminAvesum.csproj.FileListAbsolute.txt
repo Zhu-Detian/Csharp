@@ -1,0 +1,6 @@
+D:\编程项目\Homework2\MaxminAvesum\bin\Debug\MaxminAvesum.exe.config
+D:\编程项目\Homework2\MaxminAvesum\bin\Debug\MaxminAvesum.exe
+D:\编程项目\Homework2\MaxminAvesum\bin\Debug\MaxminAvesum.pdb
+D:\编程项目\Homework2\MaxminAvesum\obj\Debug\MaxminAvesum.csprojAssemblyReference.cache
+D:\编程项目\Homework2\MaxminAvesum\obj\Debug\MaxminAvesum.exe
+D:\编程项目\Homework2\MaxminAvesum\obj\Debug\MaxminAvesum.pdb
