@@ -23,17 +23,17 @@ namespace Homework3
         }
         public override void Pass()
         {
-            while (true) { 
-            string radius = "";
-            Console.WriteLine("Please input the radius of the circle:");
-            radius = Console.ReadLine();
-                if (!double.TryParse(radius, out r))
-                {
-                    Console.WriteLine("Error in,please input again");
-                    continue;
-                }
-                break;
+            Random ra = new Random(DateTime.Now.Millisecond);
+            while (true) {
+                double radius = ra.NextDouble()*100;
+                r = radius;
             }
+            throw Exception();
+        }
+
+        private Exception Exception()
+        {
+            throw new NotImplementedException();
         }
     }
         class Rectangle : Shape
@@ -50,30 +50,22 @@ namespace Homework3
             }
             public override void Pass()
             {
-                string Width="";
-                string Height="";
+            Random ra = new Random(DateTime.Now.Millisecond);
+            double Width = ra.NextDouble() * 100;
+            double Height = ra.NextDouble() * 100;
             while (true)
             {
-                Console.WriteLine("Please input the width of the rectangle:");
-                Width = Console.ReadLine();
-                if (!double.TryParse(Width, out width))
-                {
-                    Console.WriteLine("Error in,please input again");
-                    continue;
-                }
-                Console.WriteLine("Please input the height of the rectangle:");
-                Height = Console.ReadLine();
-                if (!double.TryParse(Height, out height))
-                {
-                    Console.WriteLine("Error in,please input again");
-                    continue;
-                }
-                break;
+                width = Width;
+                height = Height;
             }
-            
+            throw Exception();
+
         }
-            
-        
+
+        private Exception Exception()
+        {
+            throw new NotImplementedException();
+        }
     }
         class Square : Shape
         {
@@ -88,21 +80,19 @@ namespace Homework3
             }
             public override void Pass()
             {
-                string Length = "";
+            Random ra = new Random(DateTime.Now.Millisecond);
+            double Length = ra.NextDouble() * 100;
             while (true)
             {
-                Console.WriteLine("Please input the length of the square: ");
-                Length = Console.ReadLine();
-                if (!double.TryParse(Length, out length))
-                {
-                    Console.WriteLine("Error in ,please write again ");
-                    continue;
-                }
-                break;
+                length = Length;
             }
-            
+            throw Exception();
         }
-        
+
+        private Exception Exception()
+        {
+            throw new NotImplementedException();
+        }
     }
         class Triangle : Shape
         {
@@ -118,54 +108,64 @@ namespace Homework3
             }
             public override void Pass()
             {
-            while (true) { 
-                Console.WriteLine("Please input the height of the Triangle:");
-                string Height = Console.ReadLine();
-                if(!double.TryParse(Height,out height))
-                {
-                    Console.WriteLine("Error in,please input again");
-                    continue;
+            Random ra = new Random(DateTime.Now.Millisecond);
+            double Height = ra.NextDouble() * 100;
+            double Bottom = ra.NextDouble() * 100;
+
+            while (true)
+            {
+                height = Height;
+                bottom = Bottom;
                 }
-                Console.WriteLine("Please input the bottom of the Triangle:");
-                string Bottom = Console.ReadLine();
-                if (!double.TryParse(Bottom, out bottom))
-                {
-                    Console.WriteLine("Error in,please input again");
-                    continue;
-                }
-                break;
-                }
+            throw Exception();
             }
+
+        private Exception Exception()
+        {
+            throw new NotImplementedException();
         }
+    }
         class Factory
         {
-        public static Shape CreateFunc(string name)
+        public static Shape CreateFunc(int name)
             {
+            Random ra = new Random(DateTime.Now.Millisecond);
+            Shape shape = null;
                 switch (name)
                 {
-                    case "1":return new Circle();
-                    case "2":return new Rectangle();
-                    case "3": return new Square();
-                    case "4":return new Triangle();
+                    case 1:
+                    shape = new Circle();
+                    break;
+                    case 2:
+                    shape=new Rectangle();
+                    break;
+                    case 3: 
+                        shape= new Square();
+                    break;
+                    case 4:
+                    shape=new Triangle();
+                    break;
                     default:
                         return null;
                 }
+            return shape;
             }
         }
         class Program
     {
         static void Main(string[] args)
         {
-                Console.WriteLine("Please select the shape");
+            double totalArea = 0.0;
+            Random ra = new Random(DateTime.Now.Millisecond);
+            for (int i = 0; i < 10;)
+            {
                 Console.WriteLine("1.Circle , 2.Rectangle , 3.Square , 4.Triangle");
-                string name = Console.ReadLine();
+                int name = ra.Next(1, 4);
                 Shape shape = Factory.CreateFunc(name);
-                if (shape != null)
-                {
-                    Console.WriteLine("Area is :{0}", shape.Area());
-                }
-                else
-                    Console.WriteLine("There's no shape you want");
-         }
+                totalArea += shape.Area();
+                i++;
+            }
+            Console.WriteLine(totalArea);
+        }
     }
 }
