@@ -1,0 +1,9 @@
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\bin\Debug\Homework7.exe.config
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\bin\Debug\Homework7.exe
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\bin\Debug\Homework7.pdb
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.csprojAssemblyReference.cache
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.Form1.resources
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.Properties.Resources.resources
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.csproj.GenerateResource.cache
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.exe
+D:\编程项目\Csharp_Homework-master\Csharp_Homework-master\Homework7\Homework7\obj\Debug\Homework7.pdb
